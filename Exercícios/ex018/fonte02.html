@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fontes/Lovebird.otf.otf') format('opentype'), url('fontes/Lovebird.ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+            /*
+
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+
+            */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            /* Pesquisar fontes no dafonte.com e olhar se tem acento */
+            /* Pesquisar fontes em imagens whatfontis, fontsquirrel, myfonts.com*/
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus magnam nulla eligendi odit voluptate asperiores omnis maxime odio quis dolorum, expedita nobis vel consequatur quaerat tenetur hic officia, culpa quibusdam.</p>
+</body>
+</html>
