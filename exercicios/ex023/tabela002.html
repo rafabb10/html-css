@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th { /* Para o cabeçalho da tabela ficar fixo*/
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n) { 
+            background-color: lightgray;
+        
+            /* 
+            Se quiser só nas ímpares, colocar odd ou even
+            Se quiser ímpar de uma cor e par da outra
+            
+            tbody > tr:nth-child(odd) {  odd = 2n-1
+            background-color: white;
+            font-weight: bold; Exemplo
+            }
+
+            tbody > tr:nth-child(even) { even = 2n
+            background-color: lightgray;
+            text-decoration: underline; Exemplo
+            }
+            */
+        }
+
+        td.num {
+            text-align: right;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis nemo impedit quas eum incidunt! Numquam vero facere ea, at veniam eos beatae. Molestiae excepturi expedita quisquam illo odio natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cumque corporis. Impedit maiores eveniet nam unde ipsa laudantium mollitia inventore expedita illum error modi, voluptate, facilis, voluptates odio dolor commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis facilis repudiandae numquam laudantium amet veniam dicta dolorem culpa voluptatem, quisquam accusantium deserunt reprehenderit dolorum aliquam odio, libero soluta. Natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi repellat asperiores aliquid non, blanditiis architecto delectus nemo ullam dolore laudantium, rerum sint numquam libero deserunt doloribus quam soluta ratione!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis nemo impedit quas eum incidunt! Numquam vero facere ea, at veniam eos beatae. Molestiae excepturi expedita quisquam illo odio natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cumque corporis. Impedit maiores eveniet nam unde ipsa laudantium mollitia inventore expedita illum error modi, voluptate, facilis, voluptates odio dolor commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis facilis repudiandae numquam laudantium amet veniam dicta dolorem culpa voluptatem, quisquam accusantium deserunt reprehenderit dolorum aliquam odio, libero soluta. Natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi repellat asperiores aliquid non, blanditiis architecto delectus nemo ullam dolore laudantium, rerum sint numquam libero deserunt doloribus quam soluta ratione!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis nemo impedit quas eum incidunt! Numquam vero facere ea, at veniam eos beatae. Molestiae excepturi expedita quisquam illo odio natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cumque corporis. Impedit maiores eveniet nam unde ipsa laudantium mollitia inventore expedita illum error modi, voluptate, facilis, voluptates odio dolor commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis facilis repudiandae numquam laudantium amet veniam dicta dolorem culpa voluptatem, quisquam accusantium deserunt reprehenderit dolorum aliquam odio, libero soluta. Natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi repellat asperiores aliquid non, blanditiis architecto delectus nemo ullam dolore laudantium, rerum sint numquam libero deserunt doloribus quam soluta ratione!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis nemo impedit quas eum incidunt! Numquam vero facere ea, at veniam eos beatae. Molestiae excepturi expedita quisquam illo odio natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cumque corporis. Impedit maiores eveniet nam unde ipsa laudantium mollitia inventore expedita illum error modi, voluptate, facilis, voluptates odio dolor commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis facilis repudiandae numquam laudantium amet veniam dicta dolorem culpa voluptatem, quisquam accusantium deserunt reprehenderit dolorum aliquam odio, libero soluta. Natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi repellat asperiores aliquid non, blanditiis architecto delectus nemo ullam dolore laudantium, rerum sint numquam libero deserunt doloribus quam soluta ratione!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis nemo impedit quas eum incidunt! Numquam vero facere ea, at veniam eos beatae. Molestiae excepturi expedita quisquam illo odio natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cumque corporis. Impedit maiores eveniet nam unde ipsa laudantium mollitia inventore expedita illum error modi, voluptate, facilis, voluptates odio dolor commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis facilis repudiandae numquam laudantium amet veniam dicta dolorem culpa voluptatem, quisquam accusantium deserunt reprehenderit dolorum aliquam odio, libero soluta. Natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi repellat asperiores aliquid non, blanditiis architecto delectus nemo ullam dolore laudantium, rerum sint numquam libero deserunt doloribus quam soluta ratione!</p>
+</body>
+</html>
